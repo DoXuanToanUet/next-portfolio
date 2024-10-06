@@ -23,7 +23,7 @@ const Home = () => {
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
            
-              Hello I'm <br/><span className="text-accent">
+              Hello I&apos;m <br/><span className="text-accent">
                    <ReactTyped
                     strings={['Toan Web']}
                     typeSpeed={200}
