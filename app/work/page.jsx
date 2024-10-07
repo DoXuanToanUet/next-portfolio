@@ -12,44 +12,55 @@ import WorkSlideBtns from '@/components/WorkSlideBtns'
 const projects = [
   {
     num:"01",
-    category:"frontend",
-    title:"Project 1",
-    description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    stack: [{name:"Html 5"}, {name: 'Css 3'}, {name: "Javascript"}],
-    image:'/assets/work/thumb1.png',
-    live: "",
+    category:"Wordpress",
+    title:"My Blog",
+    description:"This is my blog",
+    stack: [{name:"Wordpress"},{name:"Mysql"},{name:"Html 5"}, {name: 'Css 3'}, {name: "Javascript"}],
+    image:'/assets/work/my-blog.jpg',
+    live: "https://doxuantoan.com/",
     github:""
   },
   {
     num:"02",
-    category:"frontend",
-    title:"Project 2",
-    description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    category:"NextJS",
+    title:"Food Ordering",
+    description:"Food Ordering",
     stack: [{name:"Html 5"}, {name: 'Css 3'}, {name: "Javascript"}],
-    image:'/assets/work/thumb2.png',
+    image:'/assets/work/thumb1.png',
     live: "",
     github:""
   },
   {
     num:"03",
-    category:"frontend",
-    title:"Project 3",
-    description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    stack: [{name:"Html 5"}, {name: 'Css 3'}, {name: "Javascript"}],
-    image:'/assets/work/thumb3.png',
-    live: "",
+    category:"NextJS",
+    title:"Blog",
+    description:"Blog https://toanweb-blog.vercel.app/",
+    stack: [{name:"NextJS"},{name:"MongoDb"},{name:"Html 5"}, {name: 'Css 3'}, {name: "Javascript"}],
+    image:'/assets/work/thumb1.png',
+    live: "https://toanweb-blog.vercel.app/",
     github:""
   },
   {
     num:"04",
-    category:"frontend",
-    title:"Project 1",
-    description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    stack: [{name:"Html 5"}, {name: 'Css 3'}, {name: "Javascript"}],
-    image:'/assets/work/thumb1.png',
-    live: "",
+    category:"Wordpress",
+    title:"Vatlieunha.vn ",
+    description:"Vatlieunha.vn - E-commerce",
+    stack: [{name:"Wordpress"},{name:"Mysql"},{name:"Html 5"}, {name: 'Css 3'}, {name: "Javascript"}],
+    image:'/assets/work/thumb1.jpg',
+    live: "https://vatlieunha.vn",
     github:""
-  }
+  },
+  {
+    num:"05",
+    category:"Wordpress",
+    title:"optimal365.vn ",
+    description:"optimal365.vn - Web Info",
+    stack:  [{name:"Wordpress"},{name:"Mysql"},{name:"Html 5"}, {name: 'Css 3'}, {name: "Javascript"}],
+    image:'/assets/work/thumb2.jpg',
+    live: "https://optimal365.vn/",
+    github:""
+  },
+ 
 ]
 
 
@@ -73,7 +84,7 @@ const Work = () => {
           initial={{opacity:0}}
           animate={{
               opacity:1,
-              transition:{ delay: 1, duration:0.4 , ease:"easeIn"}
+              transition:{ delay: 0.2, duration: 0.3 , ease:"easeIn"}
           }}
           className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
       >
@@ -115,15 +126,17 @@ const Work = () => {
                       </TooltipProvider>
                     </Link>
                     {/* github button */}
-                    <Link href={project.github}>
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center">
-                            <BsGithub className="text-white text-3xl hover:text-accent"/>
-                          </TooltipTrigger>
-                          <TooltipContent><p>Live project</p></TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
+                    <Link href={project.github} passHref>
+                      {/* <a target="_blank" rel="noopener noreferrer"> */}
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center">
+                              <BsGithub className="text-white text-3xl hover:text-accent"/>
+                            </TooltipTrigger>
+                            <TooltipContent><p>Github</p></TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                        {/* </a> */}
                     </Link>
                   </div>
                 </div>
@@ -137,7 +150,7 @@ const Work = () => {
                 >
                   {projects.map( (project,index)=>(
                     <SwiperSlide key={index}>
-                      <div className="h-[460px] relative flex justify-center items-center bg-pink-50/20">
+                      <div className="h-[460px] relative flex justify-center items-center bg-pink-50/20 rounded-lg overflow-hidden">
                         {/* overlay */}
                         <div></div>
                         {/* image */}
@@ -145,7 +158,7 @@ const Work = () => {
                           <Image
                             src={project.image}
                             fill
-                            className="object-cover"
+                            className="object-contain"
                             alt=""
                           />
                         </div>

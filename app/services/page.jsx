@@ -7,22 +7,22 @@ import { BsArrowDownRight } from "react-icons/bs";
 const services = [
   {
     num: '01',
-    title: 'Web Development',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptatem harum doloremque, necessitatibus fuga corporis porro rerum eveniet ab, exercitationem id odit! Commodi obcaecati alias ipsam vitae, error voluptatum at.'
+    title: 'WordPress Developer ',
+    description: 'I am a professional WordPress Developer with experience in developing and customizing websites using the WordPress platform. With a solid understanding of HTML, CSS, JavaScript, and PHP, I can create intuitive user interfaces, optimize website performance, and build complex features tailored to clients'
   },
   {
     num: '02',
-    title: 'Web Development',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptatem harum doloremque, necessitatibus fuga corporis porro rerum eveniet ab, exercitationem id odit! Commodi obcaecati alias ipsam vitae, error voluptatum at.'
+    title: 'ReactJs Developer(NextJS)',
+    description: ' I am skilled in JavaScript (ES6+), JSX, Redux, and React Hooks, ensuring optimal performance and user-friendly interfaces. I specialize in developing server-side rendered (SSR) and static site generated (SSG) applications that are optimized for SEO and provide excellent performance.'
   },
   {
     num: '03',
-    title: 'Web Development',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptatem harum doloremque, necessitatibus fuga corporis porro rerum eveniet ab, exercitationem id odit! Commodi obcaecati alias ipsam vitae, error voluptatum at.'
+    title: 'UX/UI Design',
+    description: 'I am a passionate UX/UI Designer with a strong focus on creating user-centered designs that are both visually appealing and highly functional. My goal is to deliver seamless and intuitive user experiences by combining aesthetics with usability.'
   }, {
     num: '04',
-    title: 'Web Development',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptatem harum doloremque, necessitatibus fuga corporis porro rerum eveniet ab, exercitationem id odit! Commodi obcaecati alias ipsam vitae, error voluptatum at.'
+    title: 'SEO',
+    description: 'I am an experienced SEO Specialist dedicated to helping businesses improve their online visibility and organic search rankings. With a deep understanding of on-page and off-page SEO strategies, including keyword research, content optimization, link building, and technical SEO, I work to ensure that websites are optimized for both search engines and users.'
   }
 ]
 
@@ -77,7 +77,7 @@ const Services = () => {
               {/*  end top */}
 
               {/*  title */}
-              <h2 className="text-[42px] font-bold text-white hover:text-accent transition-all duration-500">{service.title}</h2>
+              <h2 className="text-[30px] font-bold text-white hover:text-accent transition-all duration-500">{service.title}</h2>
               {/*  end title */}
 
               {/* desc */}

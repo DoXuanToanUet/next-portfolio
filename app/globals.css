@@ -71,7 +71,7 @@ body {
 
 @layer base {
   body{
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary bg-primary text-white leading-normal ;
   }
   .h1{
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;

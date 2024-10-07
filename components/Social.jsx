@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter} from 'react-icons/fa'
-
+import { SiGmail } from "react-icons/si";
+import { SiZalo } from "react-icons/si";
 const socials =[
+    {icon:<SiGmail/>, path:''},
     {icon:<FaGithub/>, path:''},
-    {icon:<FaLinkedinIn/>, path:''},
-    {icon:<FaYoutube/>, path:''},
+    {icon:<SiZalo/>, path:'https://zalo.me/0385157444'},
     {icon:<FaTwitter/>, path:''},
 ]
 

@@ -20,7 +20,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 ">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none home-left xl:w-[60%]">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Wordpress Developer</span>
             <h1 className="h1 mb-6">
            
               Hello I&apos;m <br/><span className="text-accent">
@@ -32,7 +32,7 @@ const Home = () => {
                   />
                   </span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">Our web software offers efficient and user-friendly solutions tailored to streamline workflows and enhance digital experiences </p>
+            <p className="max-w-[500px] mb-9 text-white/80">I am currently a WordPress developer and aspire to become a React.js developer. </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button  variant="outline" size="lg" className="uppercase flex items-center gap-2" onClick={handleDownloadCV}>
